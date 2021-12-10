@@ -1,21 +1,22 @@
 // import './App.css';
 import React from 'react';
-import  { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import  { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './components/Home';
 import EditUser from './components/EditUser';
 import AddUser from './components/AddUser';
 
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 function App() {
   return (
-    <div className="App">
+    <div style={{maxWidth: "30rem", margin: "4rem auto "}}>
       <Router> 
         <h1>Nav</h1>
-        <Routes>
-          <Route path ="/" component= {Home} />
+        <Switch>
+          <Route exact path ="/" component= {Home} />
           <Route path ="/add" component= {AddUser} />
           <Route path ="/edit/:id" component= {EditUser}  />
-        </Routes>
+        </Switch>
       </Router>
     </div>
   );
