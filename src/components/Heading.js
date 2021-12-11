@@ -5,7 +5,7 @@ import { Navbar, Nav, NavItem, NavbarBrand, Container} from 'reactstrap'
 const Heading = () => {
     return (
         <Navbar color="dark">
-            <Container> 
+            <Container className="d-flex justify-content-between"> 
               <NavbarBrand href="/"> My Team</NavbarBrand>  
               <Nav> 
                   <NavItem>
