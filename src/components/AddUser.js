@@ -11,7 +11,7 @@ const AddUser = () => {
     
     const onSubmit = () => {
         const newUser = {
-            id: uuid,
+            id: uuid(),
             name
         }
         addUser(newUser);
